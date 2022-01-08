@@ -51,7 +51,7 @@
             </goals>
           </execution>
 
-          <!-- code validation -->
+          <!-- code validation
           <execution>
             <id>npm run lint</id>
             <goals>
@@ -61,7 +61,7 @@
             <configuration>
               <arguments>run lint</arguments>
             </configuration>
-          </execution>
+          </execution> -->
 
           <!-- build app -->
           <execution>
