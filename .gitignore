@@ -73,3 +73,17 @@ fabric.properties
 
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
+frontend/target/frontend-0.1-SNAPSHOT.jar
+frontend/target/classes/favicon.ico
+frontend/target/classes/index.html
+frontend/target/classes/main.js
+frontend/target/classes/main.js.map
+frontend/target/classes/polyfills.js
+frontend/target/classes/polyfills.js.map
+frontend/target/classes/runtime.js
+frontend/target/classes/runtime.js.map
+frontend/target/classes/styles.css
+frontend/target/classes/styles.css.map
+frontend/target/classes/vendor.js
+frontend/target/classes/vendor.js.map
+frontend/target/maven-archiver/pom.properties
