@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PingServerComponent } from './ping-server/ping-server.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PingServerComponent
   ],
   imports: [
     BrowserModule,

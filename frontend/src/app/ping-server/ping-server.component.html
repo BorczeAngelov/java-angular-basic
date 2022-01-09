@@ -1,0 +1,26 @@
+<h3>Ping-Server component</h3>
+
+<div>
+    <!-- <div>
+        <label>Is production: {{pingServerService.isProduction}} </label>
+    </div> -->
+
+    <div>
+        <label>Front- and Backend server url: {{pingServerService.serverUrl}} </label>
+    </div>
+
+    <div>
+        <label>Connect with backend server message: {{connectMessage}} </label>
+    </div>
+</div>
+
+<div style="margin-top: 50px;">
+    <button (click)="pingServer()">Ping Server</button>
+
+    <div>
+        <label>Response from server: </label>
+        <div>
+            <label>{{(pingServerService.pingResponeMessage$ | async)?.message}}</label>
+        </div>
+    </div>
+</div>
