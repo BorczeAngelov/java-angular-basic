@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { first, map, tap } from 'rxjs/operators';
-import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +11,7 @@ import { environment } from 'src/environments/environment';
 export class AppComponent implements OnInit {
   title = 'frontend';
   message = '';
-  pingMessage = '';
+  pingResponeMessage = '';
   hostNameUrl: string;
 
   constructor(private http: HttpClient) { }
@@ -26,12 +25,15 @@ export class AppComponent implements OnInit {
       tap(result => console.log('Message received from the server: ', result)),
       map(result => this.message = (result as any).message)
     ).subscribe();
+  }
+
+  pingServer(): void {
 
     this.http.get(this.hostNameUrl + '/api/pingServer').pipe(
       first(),
       tap(result => console.log('pingMessage received from the server: ', result)),
-      map(result => this.pingMessage = (result as any).message)
-    ).subscribe();    
-  }
+      map(result => this.pingResponeMessage = (result as any).message)
+    ).subscribe();
 
+  }
 }
